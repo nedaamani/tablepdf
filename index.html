@@ -22,23 +22,26 @@
         width: 80%;
         margin: 0px auto;
         border-collapse: collapse;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    
     }
 
     caption {
         padding: 20px 20px;
         text-align: right;
         background-color: #f39700;
-        color:#fdfcff;
+        color: #fdfcff;
         font-size: 25px;
     }
 
     tbody>tr:nth-child(even) {
         background-color: #f3efef;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #subject{
+        text-align: right;
     }
 
-    th,
+     tbody>th,
     td {
 
         padding: 20px;
@@ -46,14 +49,30 @@
     }
 
     th {
-        color: rgb(19, 19, 19);
-        text-align: right;
+        color: #5a6265;
+      
+      
     }
 
-    thead>tr {
-        background-color:#e8e8e8;
+    thead>tr>th {
+        background-color: #e8e8e8;
+     padding-top: 30px;
+       padding-bottom: 10px;
+      padding-left: 30px;
+  
     }
-   
+
+    tr>td {
+        padding: 20px 30px;
+    }
+    td>a {
+        text-decoration: none;
+        color: #337ab7;
+    }
+    .file {
+           color: #5a6265; ;
+    }
+
 
     section {
         width: 80%;
@@ -63,28 +82,40 @@
         justify-content: left;
         margin: 0px auto;
         background-color: #f3efef;
-        gap: 15px;
-
-
+        gap: 5px;
+ 
     }
 
     section>div {
         flex: 1;
-        border: 1px solid #dad5d5;
-        padding: 10px 10px;
+        border:1px solid #dad5d5;
         transition: 0.5s;
- 
-
+        text-align: center;
+        margin-top: 50px;
+    
     }
 
     div:hover {
-        background-color:#dadee1;
+        background-color: #dadee1;
         color: #f2f2f2;
     }
-    section a{
+
+    section a {
         text-decoration: none;
-      padding: 10px 20px;
-      text-align: center;
+        padding: 10px 20px;
+        color: #5a6265;
+
+    }
+
+    span {
+        border: 0.5px solid #e6dcdc;
+        margin-top: 50px;
+       
+    }
+
+    span:hover {
+        background-color: #dadee1;
+        color: #f2f2f2;
     }
 </style>
 
@@ -98,7 +129,7 @@
             <tr>
                 <th scope="col">ردیف </th>
                 <th></th>
-                <th scope="col">عنوان</th>
+                <th scope="col" id="subject">عنوان</th>
                 <th scope="col">نوع فایل</th>
                 <th scope="col">دریافت فایل</th>
             </tr>
@@ -110,21 +141,21 @@
                 <th scope="row">1 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td><a href="downdloads/tableproject-main.rar">دریافت فایل</a> </td>
             </tr>
             <tr>
                 <th scope="row">2 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td><a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
             <tr>
                 <th scope="row">3 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
-                <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a>ا</td>
-                <td> pdf</td>
+                <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
+                <td class="file"> pdf</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
@@ -133,37 +164,37 @@
                 <th scope="row">4 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
             <tr>
                 <th scope="row">5 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
             <tr>
                 <th scope="row">6 </th>
-                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td><i class="fa-solid fa-file-excel"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> xlsx</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
             <tr>
                 <th scope="row">7 </th>
-                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td><i class="fa-solid fa-file-excel"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> xlsx</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
             <tr>
                 <th scope="row">8 </th>
-                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td><i class="fa-solid fa-file-excel"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> xlsx</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
@@ -173,7 +204,7 @@
                 <th scope="row">9 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
@@ -182,7 +213,7 @@
                 <th scope="row">10 </th>
                 <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td><a href="">اصلاحیه دوم ضوابط تاسیس وبهرهبرداری از شرکت های حملو نقل کالا</a></td>
-                <td> pdf</td>
+                <td class="file"> pdf</td>
                 <td> <a href="downdloads/tableproject-main.rar">دریافت فایل</a></td>
             </tr>
 
@@ -190,7 +221,7 @@
     </table>
     <section id="space">
         <section id="pagination">
-            <span> <a href=""> <i class="fa-solid fa-angle-right"></i></a></span>
+            <span> <a href=""><i class="fa-solid fa-angle-right"></i></a></span>
             <span> <a href=""><i class="fa-solid fa-angles-right"></i></a></span>
             <div> <a href="">1</a></div>
             <div><a href="">2</a></div>
@@ -202,8 +233,8 @@
             <div><a href="">8</a></div>
             <div><a href="">9</a></div>
             <div><a href="">10</a></div>
-            <span><i class="fa-solid fa-angle-left"></i></span>
-            <span><i class="fa-solid fa-angles-left"></i></span>
+            <span> <a href=""><i class="fa-solid fa-angle-left"></i></a></span>
+            <span> <a href=""><i class="fa-solid fa-angles-left"></i></a></span>
         </section>
 
     </section>
